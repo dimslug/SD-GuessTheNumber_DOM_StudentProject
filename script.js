@@ -6,9 +6,33 @@
 function randomNumber(userGuess, computersNumber) {
 
     // YOUR CODE BELOW
+    // let numBer = computersNumber
+    // switch (true) {
+    //     case (userGuess == computersNumber):            
+    //         return `The number was ${numBer}`;
+    //         break;
+    //     case (userGuess > computersNumber):
+    //         return "Higher";
+    //         break;
+    //     case (userGuess < computersNumber):
+    //         return "Lower";
+    // }
 
-
-
+    let numBer = computersNumber;
+    let guessNum = "";
+    if (userGuess == computersNumber) {
+        guessNum=guessNum+1
+        console.log(guessNum)
+        return `The number was ${numBer}, Guess Number:${guessNum}`;
+    }   else if (userGuess > computersNumber) {
+        guessNum=guessNum+1
+            console.log(guessNum);
+            return `Lower, Guess Number:${guessNum}`;
+    }   else if (userGuess < computersNumber) {
+        guessNum+1
+        console.log(guessNum);
+        return `Higher, Guess Number:${guessNum}`;
+    }
 
     // YOUR CODE ABOVE
 };
@@ -34,7 +58,9 @@ function startCompGuess(num) {
     // This should return a string that denotes the first guessed number
 
     // YOUR CODE ...
-
+    // console.log(`${num}`);
+    // return `Is your number ${num}?`;
+    // computersGuess = num;
 
 }
 
@@ -44,6 +70,9 @@ function compGuess(reply) {
 
     This should return a string indicating the computers response.
     */
+    // if(reply === "correct") {
+    //     return `I got it!`;
+    // } else if (reply === "lower")
 
 }
 
