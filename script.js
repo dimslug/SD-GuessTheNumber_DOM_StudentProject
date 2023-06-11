@@ -2,7 +2,7 @@
     - Include a check to see if the user inputs a value out of scope of the desired values (1-100)
     - It should be compared to a variable named: numberToGuess
 */
-
+let guessNum = 0;
 function randomNumber(userGuess, computersNumber) {
 
     // YOUR CODE BELOW
@@ -19,19 +19,19 @@ function randomNumber(userGuess, computersNumber) {
     // }
 
     let numBer = computersNumber;
-    let guessNum = "";
+    
     if (userGuess == computersNumber) {
-        guessNum=guessNum+1
+        guessNum+=1
         console.log(guessNum)
-        return `The number was ${numBer}, Guess Number:${guessNum}`;
+        return `The number was ${numBer}! It took you ${guessNum} guesses!`;
     }   else if (userGuess > computersNumber) {
-        guessNum=guessNum+1
+        guessNum+=1
             console.log(guessNum);
-            return `Lower, Guess Number:${guessNum}`;
+            return `You guessed ${userGuess}, guess Lower. Number of Guesses: ${guessNum}`;
     }   else if (userGuess < computersNumber) {
-        guessNum+1
+        guessNum+=1
         console.log(guessNum);
-        return `Higher, Guess Number:${guessNum}`;
+        return `You guessed ${userGuess}, guess Higher. Number of Guesses: ${guessNum}`;
     }
 
     // YOUR CODE ABOVE
@@ -58,10 +58,9 @@ function startCompGuess(num) {
     // This should return a string that denotes the first guessed number
 
     // YOUR CODE ...
-    // console.log(`${num}`);
-    // return `Is your number ${num}?`;
-    // computersGuess = num;
-
+    // let firstGuess = num ;
+    // console.log(`${firstGuess}`);
+    // return `Is it ... ${firstGuess}?`;
 }
 
 function compGuess(reply) {
@@ -70,9 +69,9 @@ function compGuess(reply) {
 
     This should return a string indicating the computers response.
     */
-    // if(reply === "correct") {
-    //     return `I got it!`;
-    // } else if (reply === "lower")
+//    let lowestNum = ;
+//    let higherNum = ;
+
 
 }
 
